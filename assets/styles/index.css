@@ -4,6 +4,7 @@
     --white: #ffffff;
     --white-blur: #ffffff33;
     --primary-light: #e1f4ff;
+    --light-blue: #f5f9ff;
 }
 * {
     padding: 0px;
@@ -11,6 +12,15 @@
 }
 p {
     margin: 0px;
+}
+
+section {
+    margin: 100px 0px 0px 0px;
+}
+
+.background-light-blue {
+    background-color: var(--light-blue);
+    padding: 80px;
 }
 
 .topbar {
@@ -183,6 +193,7 @@ footer {
 }
 h2 {
     font-size: 48px;
+    color: var(--primary);
 }
 
 /* button styles */
@@ -194,4 +205,25 @@ h2 {
 }
 .btn.btn-primary {
     background-color: var(--primary);
+}
+
+.btn-with-icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* input styles  */
+
+.input-primary {
+    border-radius: 8px;
+    height: 48px;
+    border-radius: var(--primary);
+    background: var(--white);
+    padding: 10px;
+    font-size: 18px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+    width: 100%;
+    color: #3a4852;
 }
