@@ -17,7 +17,7 @@
         />
         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
         <link rel="stylesheet" href="assets/styles/index.css" />
-        <title></title>
+        <title>Germesteks</title>
     </head>
     <body>
         <div class="navigation-mobile">
@@ -142,7 +142,9 @@
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="/assets/images/home.png" alt="home" />
-                            <div class="carousel-caption !mb-[300px]">
+                            <div
+                                class="carousel-caption md:!mb-[300px] !mb-[50px]"
+                            >
                                 <h1 class="bold">Germesteks</h1>
                                 <p class="bold">
                                     Discover your next adventure effortlessly!
@@ -164,8 +166,12 @@
                         </div>
                         <div class="carousel-item">
                             <div class="h-[850px]"></div>
-                            <div class="carousel-caption !mb-[100px]">
-                                <div class="d-flex gap-[20px]">
+                            <div
+                                class="carousel-caption !mb-[380px] md:!mb-[100px]"
+                            >
+                                <div
+                                    class="d-flex gap-[20px] md:flex-nowrap flex-wrap justify-center"
+                                >
                                     <div class="caption">
                                         <h1 class="bold">Germesteks</h1>
                                         <p class="bold">
@@ -319,7 +325,7 @@
         <footer>
             <div class="container !py-[40px]">
                 <div
-                    class="flex items-center justify-between !pb-[20px] border-b-[1px] border-[#fff]"
+                    class="flex items-center justify-between !pb-[20px] border-b-[1px] border-[#fff] flex-wrap gap-[20px]"
                 >
                     <div class="max-w-[330px] flex flex-col gap-[24px]">
                         <img
@@ -369,16 +375,20 @@
                             +998 (55) 502-95-25
                         </p>
                     </div>
-                    <div>
+                    <div
+                        class="flex justify-center items-center md:w-auto w-full"
+                    >
                         <iframe
                             src="https://yandex.ru/map-widget/v1/-/CDQqu2Zx"
                             loading="lazy"
                             frameborder="0"
-                            class="w-[100vw] h-[100vw] max-w-[415px] max-h-[260px] rounded-[8px]"
+                            class="w-[300px] h-[260px] md:w-[415px] rounded-[8px]"
                         ></iframe>
                     </div>
                 </div>
-                <div class="flex items-center justify-between !mt-[30px]">
+                <div
+                    class="flex items-center justify-between !mt-[30px] flex-wrap"
+                >
                     <p class="bold text-[#DEE2DD]">Copyright © 2025 Logistic</p>
                     <div class="flex items-center gap-[10px]">
                         <img
