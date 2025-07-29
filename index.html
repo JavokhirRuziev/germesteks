@@ -15,9 +15,396 @@
             href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
             rel="stylesheet"
         />
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <link rel="stylesheet" href="assets/styles/index.css" />
         <title></title>
     </head>
     <body>
+        <div class="navigation-mobile">
+            <div
+                class="offcanvas offcanvas-start"
+                tabindex="-1"
+                id="offcanvasExample"
+                aria-labelledby="offcanvasExampleLabel"
+            >
+                <div class="offcanvas-header">
+                    <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="offcanvas"
+                        aria-label="Close"
+                    ></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="navigation">
+                        <ul class="navigation-list-wrapper">
+                            <li class="navbar-items active">
+                                <a href="#"> Home </a>
+                            </li>
+                            <li class="navbar-items">
+                                <a href="#"> About us </a>
+                            </li>
+                            <li class="navbar-items">
+                                <a href="#"> Products </a>
+                            </li>
+                            <li class="navbar-items">
+                                <a href="#"> Catalog </a>
+                            </li>
+                            <li class="navbar-items">
+                                <a href="#"> Gallery </a>
+                            </li>
+                            <li class="navbar-items">
+                                <a href="#"> Order Form </a>
+                            </li>
+                            <div>
+                                <button
+                                    type="button"
+                                    class="btn btn-primary d-flex items-center gap-[10px] rounded-full"
+                                >
+                                    Contact
+                                    <img
+                                        class="w-[32px]"
+                                        src="assets/icons/goto.svg"
+                                        alt="go-to"
+                                    />
+                                </button>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="topbar">
+            <div class="container">
+                <div
+                    class="topbar-wrapper flex items-center justify-between md:flex-row flex-col-reverse gap-[10px]"
+                >
+                    <div class="flex items-center gap-[16px]">
+                        <div class="flex items-center gap-[8px]">
+                            <img
+                                class="w-[20px]"
+                                src="/assets/icons/phone.svg"
+                                alt="phone"
+                            />
+                            <p
+                                class="bold text-md-[12px] text-[10px] text-[#FFFFFFCC]"
+                            >
+                                +998 90 123 45 677
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-[8px]">
+                            <img
+                                class="w-[20px]"
+                                src="/assets/icons/location.svg"
+                                alt="phone"
+                            />
+                            <p
+                                class="bold text-md-[12px] text-[10px] text-[#FFFFFFCC]"
+                            >
+                                Tashkent, Shaykhantakhur district, Toshkucha
+                                street, 128
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-[10px]">
+                        <img
+                            class="w-[20px]"
+                            src="/assets/icons/telegram.svg"
+                            alt="telegram"
+                        />
+                        <img
+                            class="w-[20px]"
+                            src="/assets/icons/instagram.svg"
+                            alt="instagram"
+                        />
+                        <img
+                            class="w-[20px]"
+                            src="/assets/icons/facebook.svg"
+                            alt="facebook"
+                        />
+                        <img
+                            class="w-[20px]"
+                            src="/assets/icons/phone.svg"
+                            alt="phone"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banner">
+            <div class="slider-wrapper absolute">
+                <div
+                    id="carouselExampleCaptions"
+                    class="carousel slide"
+                    data-bs-ride="carousel"
+                    data-bs-interval="3000"
+                >
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/assets/images/home.png" alt="home" />
+                            <div class="carousel-caption !mb-[300px]">
+                                <h1 class="bold">Germesteks</h1>
+                                <p class="bold">
+                                    Discover your next adventure effortlessly!
+                                    Explore a world of options and find the
+                                    perfect tour, activity, attraction, or
+                                    ticket for your next unforgettable
+                                    experience with ease.
+                                </p>
+                                <button
+                                    class="btn ai-button d-flex items-center gap-[10px]"
+                                >
+                                    <img
+                                        src="assets/icons/ai-decoration.svg"
+                                        alt="ai-img"
+                                    />
+                                    Lets Talk
+                                </button>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="h-[850px]"></div>
+                            <div class="carousel-caption !mb-[100px]">
+                                <div class="d-flex gap-[20px]">
+                                    <div class="caption">
+                                        <h1 class="bold">Germesteks</h1>
+                                        <p class="bold">
+                                            Discover your next adventure
+                                            effortlessly! Explore a world of
+                                            options and find the perfect tour,
+                                            activity, attraction, or ticket for
+                                            your next unforgettable experience
+                                            with ease.
+                                        </p>
+                                        <button
+                                            class="btn ai-button d-flex items-center gap-[10px]"
+                                        >
+                                            <img
+                                                src="assets/icons/ai-decoration.svg"
+                                                alt="ai-img"
+                                            />
+                                            Lets Talk
+                                        </button>
+                                    </div>
+                                    <div class="relative z-[2]">
+                                        <div class="product-img">
+                                            <div
+                                                class="product-img-decor"
+                                            ></div>
+                                            <img
+                                                class="!w-[100%] !max-w-[570px] !h-[100%] !max-h-[370px] object-contain"
+                                                src="/assets/images/cones-1.png"
+                                                alt="home"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="banner-wrapper max-w-[1280px] m-auto">
+                <div class="banner-top flex items-center justify-between px-2">
+                    <img
+                        class="w-[146px] h-[52px] w-md-[100px] h-md-[40px]"
+                        src="/assets/icons/logo.svg"
+                        alt="logo"
+                    />
+                    <div class="flex items-center gap-[10px]">
+                        <button
+                            type="button"
+                            class="btn btn-primary d-md-flex d-none items-center gap-[10px] rounded-full"
+                        >
+                            Contact
+                            <img
+                                class="w-[32px]"
+                                src="assets/icons/goto.svg"
+                                alt="go-to"
+                            />
+                        </button>
+                        <div class="btn-group">
+                            <button
+                                class="btn btn-light dropdown-toggle dropdown d-flex items-center"
+                                type="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                            >
+                                <img
+                                    class="w-[24px] h-[24px] rounded-full object-contain"
+                                    src="/assets/icons/usa.svg"
+                                    alt="usa"
+                                />
+                            </button>
+                            <ul class="dropdown-menu p-2">
+                                <li class="dropdown-item">
+                                    <div
+                                        class="flex items-center gap-[10px] cursor-pointer"
+                                    >
+                                        <p class="bold text-[20px]">English</p>
+                                        <img
+                                            class="w-[24px] rounded"
+                                            src="/assets/icons/usa.svg"
+                                            alt="usa"
+                                        />
+                                    </div>
+                                </li>
+                                <li class="dropdown-item">
+                                    <div
+                                        class="flex items-center gap-[10px] cursor-pointer"
+                                    >
+                                        <p class="bold text-[20px]">
+                                            O'zbekcha
+                                        </p>
+                                        <img
+                                            class="w-[24px] rounded"
+                                            src="/assets/icons/uzb.svg"
+                                            alt="uzb"
+                                        />
+                                    </div>
+                                </li>
+                                <li class="dropdown-item">
+                                    <div
+                                        class="flex items-center gap-[10px] cursor-pointer"
+                                    >
+                                        <p class="bold text-[20px]">Русский</p>
+                                        <img
+                                            class="w-[24px] rounded"
+                                            src="/assets/icons/rus.svg"
+                                            alt="rus"
+                                        />
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <button
+                            class="btn btn-light d-md-none d-block"
+                            type="button"
+                            data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasExample"
+                            aria-controls="offcanvasExample"
+                        >
+                            <img
+                                class="w-[24px] h-[24px]"
+                                src="assets/icons/menu.svg"
+                                alt="menu"
+                            />
+                        </button>
+                    </div>
+                </div>
+                <div class="navigation d-md-block d-none">
+                    <ul class="navigation-list-wrapper">
+                        <li class="navbar-items active">
+                            <a href="#"> Home </a>
+                        </li>
+                        <li class="navbar-items">
+                            <a href="#"> About us </a>
+                        </li>
+                        <li class="navbar-items">
+                            <a href="#"> Products </a>
+                        </li>
+                        <li class="navbar-items">
+                            <a href="#"> Catalog </a>
+                        </li>
+                        <li class="navbar-items">
+                            <a href="#"> Gallery </a>
+                        </li>
+                        <li class="navbar-items">
+                            <a href="#"> Order Form </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container !py-[40px]">
+                <div
+                    class="flex items-center justify-between !pb-[20px] border-b-[1px] border-[#fff]"
+                >
+                    <div class="max-w-[330px] flex flex-col gap-[24px]">
+                        <img
+                            class="w-[146px] h-[52px] w-md-[100px] h-md-[40px]"
+                            src="/assets/icons/logo.svg"
+                            alt="logo"
+                        />
+                        <p class="bold text-[16px] text-white">
+                            Faucibus quis fringilla scelerisque dui. Amet
+                            parturient dui venenatis amet sagittis viverra vel
+                            tincidunt. Orci tincidunt.
+                        </p>
+                        <div>
+                            <button
+                                class="btn btn-light btn-lg d-flex items-center gap-[10px] !text-[#26488C]"
+                            >
+                                <img
+                                    src="assets/icons/chat.svg"
+                                    alt="chat-icon"
+                                    class="w-[24px] h-[24px]"
+                                />
+                                Start Live Chat
+                            </button>
+                        </div>
+                    </div>
+                    <div class="max-w-[140px] flex flex-col gap-[10px]">
+                        <p class="bold text-[16px] text-white">Location</p>
+                        <p class="bold text-[14px] text-white">
+                            Shayxontohur tumaniQora Tosh MFY 9 - uy
+                        </p>
+                    </div>
+                    <div class="flex flex-col gap-[10px]">
+                        <p class="bold text-[16px] text-white">Phone</p>
+                        <p class="bold text-[14px] text-white">
+                            +998 (90) 319-90-95
+                        </p>
+                        <p class="bold text-[14px] text-white">
+                            +998 (90) 167-06-46
+                        </p>
+                        <p class="bold text-[14px] text-white">
+                            +998 (98) 126-00-61
+                        </p>
+                        <p class="bold text-[14px] text-white">
+                            +998 (71) 243-59-18
+                        </p>
+                        <p class="bold text-[14px] text-white">
+                            +998 (55) 502-95-25
+                        </p>
+                    </div>
+                    <div>
+                        <iframe
+                            src="https://yandex.ru/map-widget/v1/-/CDQqu2Zx"
+                            loading="lazy"
+                            frameborder="0"
+                            class="w-[100vw] h-[100vw] max-w-[415px] max-h-[260px] rounded-[8px]"
+                        ></iframe>
+                    </div>
+                </div>
+                <div class="flex items-center justify-between !mt-[30px]">
+                    <p class="bold text-[#DEE2DD]">Copyright © 2025 Logistic</p>
+                    <div class="flex items-center gap-[10px]">
+                        <img
+                            class="w-[20px]"
+                            src="/assets/icons/telegram.svg"
+                            alt="telegram"
+                        />
+                        <img
+                            class="w-[20px]"
+                            src="/assets/icons/instagram.svg"
+                            alt="instagram"
+                        />
+                        <img
+                            class="w-[20px]"
+                            src="/assets/icons/facebook.svg"
+                            alt="facebook"
+                        />
+                        <img
+                            class="w-[20px]"
+                            src="/assets/icons/phone.svg"
+                            alt="phone"
+                        />
+                    </div>
+                </div>
+            </div>
+        </footer>
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
