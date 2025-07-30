@@ -3,6 +3,7 @@
     --black: #000000;
     --white: #ffffff;
     --white-blur: #ffffff33;
+    --black-blur: #00000033;
     --primary-light: #e1f4ff;
     --light-blue: #f5f9ff;
 }
@@ -31,6 +32,21 @@ section {
 }
 .banner-top {
     padding: 35px 0px 0px 0px;
+}
+.banner-top-blur {
+    backdrop-filter: blur(10px);
+    background: linear-gradient(
+        180deg,
+        var(--black-blur) 0%,
+        var(--black-blur) 50%,
+        var(--white-blur) 100%
+    );
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 334px;
+    z-index: -1;
 }
 .banner {
     width: 100%;
@@ -81,6 +97,9 @@ section {
     color: var(--white);
     margin: 30px auto 0px;
     box-shadow: 0px 1px 50px 0px #ffffff70;
+}
+.ai-button.dark {
+    background: var(--black-blur);
 }
 .ai-button img {
     width: 15px;
