@@ -158,6 +158,21 @@ footer {
     flex-wrap: wrap;
 }
 
+.catalog-block-img {
+    backdrop-filter: blur(31.104000091552734px);
+    box-shadow: 1px 1px 50px 0px #0000004d;
+}
+
+.carousel-control-prev {
+    left: -50px;
+    opacity: 1;
+}
+
+.carousel-control-next {
+    right: -50px;
+    opacity: 1;
+}
+
 /* responsive */
 
 @media (max-width: 768px) {
