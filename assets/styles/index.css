@@ -190,6 +190,16 @@ footer {
     height: 100%;
 }
 
+.checkout-item {
+    border-radius: 16px;
+    background: var(--white);
+    padding: 10px;
+    position: relative;
+    display: inline-flex;
+    min-width: 350px;
+    margin-bottom: 20px;
+}
+
 /* responsive */
 
 @media (max-width: 768px) {
@@ -283,7 +293,7 @@ h2 {
 .input-primary {
     border-radius: 8px;
     height: 48px;
-    border-radius: var(--primary);
+    border: 1px solid var(--primary);
     background: var(--white);
     padding: 10px;
     font-size: 18px;
@@ -291,4 +301,12 @@ h2 {
     font-weight: 500;
     width: 100%;
     color: #3a4852;
+}
+
+/* divider */
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background: #9c9ea0;
 }

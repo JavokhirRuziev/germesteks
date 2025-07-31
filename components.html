@@ -1,2 +1,44 @@
 <p class="bold text-[16px] text-[#3A4852] !mb-[8px]"></p>
 <input type="text" class="input-primary" />
+
+<div
+    class="flex items-center border rounded-md px-3 py-2 bg-white w-full max-w-md"
+>
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="w-5 h-5 text-gray-400 mr-2"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+    >
+        <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M5 13l4 4L19 7"
+        />
+    </svg>
+    <input
+        type="text"
+        value="Google Pay"
+        disabled
+        class="bg-transparent outline-none w-full text-gray-700"
+    />
+</div>
+
+<div class="relative w-full max-w-md">
+    <select
+        class="appearance-none w-full input-primary pr-10 bg-white text-gray-700 cursor-pointer"
+    >
+        <option>Google Pay</option>
+        <option>Apple Pay</option>
+        <option>Stripe</option>
+    </select>
+
+    <!-- Custom arrow icon (positioned absolutely on right) -->
+    <img
+        src="/assets/icons/arrow-right-outlined.svg"
+        alt="arrow"
+        class="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none"
+    />
+</div>
