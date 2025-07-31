@@ -172,6 +172,23 @@ footer {
     right: -50px;
     opacity: 1;
 }
+.masonry {
+    column-count: 3;
+    column-gap: 1em;
+}
+
+.masonry-item {
+    break-inside: avoid;
+    margin-bottom: 1em;
+    position: relative;
+}
+
+.masonry img {
+    width: 100%;
+    display: block;
+    border-radius: 12px;
+    height: 100%;
+}
 
 /* responsive */
 
