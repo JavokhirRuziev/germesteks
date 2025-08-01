@@ -394,4 +394,13 @@ h2 {
     .banner-top-blur {
         height: 180px;
     }
+    .carousel-control-prev {
+        left: -20px;
+        opacity: 1;
+    }
+
+    .carousel-control-next {
+        right: -20px;
+        opacity: 1;
+    }
 }
