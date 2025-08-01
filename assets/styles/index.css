@@ -391,4 +391,7 @@ h2 {
         padding: 20px;
         width: auto;
     }
+    .banner-top-blur {
+        height: 180px;
+    }
 }
