@@ -200,53 +200,43 @@ footer {
     margin-bottom: 20px;
 }
 
-/* responsive */
+.experience-item {
+    background: var(--white);
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.experience-item-wrapper {
+    display: flex;
+    gap: 16px;
+}
+.h2-bottom-margin {
+    margin-bottom: 60px;
+}
 
-@media (max-width: 768px) {
-    .navigation {
-        margin-top: 0px;
-    }
-    .navigation-list-wrapper {
-        flex-direction: column;
-        align-items: unset;
-    }
+.mission-item {
+    width: 230px;
+    height: 240px;
+    background: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 40px;
+}
 
-    .navbar-items a {
-        color: var(--black);
-    }
-    .navbar-items.active a {
-        color: var(--white);
-    }
-    .carousel-caption h1 {
-        font-size: 50px;
-    }
-    .banner {
-        height: 450px;
-    }
-
-    .slider-wrapper {
-        height: 450px;
-    }
-
-    .carousel-item img {
-        object-fit: cover;
-        width: 100%;
-        height: 450px;
-    }
-    .ai-button img {
-        width: 15px;
-        height: 15px;
-    }
-    .product-img-decor {
-        height: 200px;
-        width: 200px;
-        border-radius: 100%;
-        background-color: var(--primary);
-        position: absolute;
-        z-index: -1;
-        top: -10px;
-        right: -20px;
-    }
+.faq-items {
+    width: 410px;
+    background: var(--white);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 40px;
 }
 
 /* text styles */
@@ -309,4 +299,92 @@ h2 {
     width: 100%;
     height: 1px;
     background: #9c9ea0;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+    .navigation {
+        margin-top: 0px;
+    }
+    .navigation-list-wrapper {
+        flex-direction: column;
+        align-items: unset;
+    }
+
+    .navbar-items a {
+        color: var(--black);
+    }
+    .navbar-items.active a {
+        color: var(--white);
+    }
+    .carousel-caption h1 {
+        font-size: 50px;
+    }
+    .banner {
+        height: 450px;
+    }
+
+    .slider-wrapper {
+        height: 450px;
+    }
+
+    .carousel-item img {
+        object-fit: cover;
+        width: 100%;
+        height: 450px;
+    }
+    .ai-button img {
+        width: 15px;
+        height: 15px;
+    }
+    .product-img-decor {
+        height: 200px;
+        width: 200px;
+        border-radius: 100%;
+        background-color: var(--primary);
+        position: absolute;
+        z-index: -1;
+        top: -10px;
+        right: -20px;
+    }
+    .background-light-blue {
+        padding: 20px;
+    }
+    .experience-item {
+        padding: 10px;
+        width: 150px;
+        height: auto;
+    }
+    h2 {
+        font-size: 30px;
+    }
+
+    .h2-bottom-margin {
+        margin-bottom: 30px;
+    }
+
+    .masonry {
+        column-count: 2;
+        column-gap: 0.5em;
+    }
+
+    .masonry img {
+        border-radius: 6px;
+    }
+    .mission-item {
+        width: auto;
+        height: auto;
+        padding: 20px;
+    }
+    .faq-items {
+        width: auto;
+        height: auto;
+        padding: 20px;
+    }
+    section {
+        margin: 50px 0px 0px 0px;
+    }
+    .experience-item-wrapper {
+        flex-wrap: wrap;
+    }
 }
