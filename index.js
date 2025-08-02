@@ -19,3 +19,15 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+const goTo = (href) => {
+    window.location.href = href;
+};
+
+const goToProduct = (hasInner) => {
+    if (hasInner) {
+        window.location.href = '/pages/products/inner.html';
+    } else {
+        window.location.href = '/pages/products/single.html';
+    }
+};
