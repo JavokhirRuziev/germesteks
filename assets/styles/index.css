@@ -204,8 +204,7 @@ footer {
     background: var(--white);
     border-radius: 10px;
     padding: 20px;
-    width: 200px;
-    height: 240px;
+    min-width: 200px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -213,14 +212,15 @@ footer {
 .experience-item-wrapper {
     display: flex;
     gap: 16px;
+    flex-wrap: wrap;
 }
 .h2-bottom-margin {
     margin-bottom: 60px;
 }
 
 .mission-item {
-    width: 230px;
-    height: 240px;
+    min-width: 230px;
+    max-width: 300px;
     background: var(--white);
     display: flex;
     flex-direction: column;
@@ -228,6 +228,13 @@ footer {
     justify-content: center;
     border-radius: 10px;
     padding: 40px;
+}
+
+.mission-item p {
+    text-align: center;
+}
+.mission-item img {
+    margin-bottom: 20px;
 }
 
 .faq-items {
