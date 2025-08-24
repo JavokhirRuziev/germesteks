@@ -237,6 +237,16 @@ footer {
     margin-bottom: 20px;
 }
 
+.reviews-item {
+    border-radius: 12px;
+    overflow: hidden;
+    width: auto;
+}
+.reviews-item img {
+    width: 200px;
+    object-fit: cover;
+}
+
 .faq-items {
     width: 410px;
     background: var(--white);
