@@ -249,11 +249,6 @@ footer {
 
 .faq-items {
     width: 410px;
-    background: var(--white);
-    display: flex;
-    flex-direction: column;
-    border-radius: 10px;
-    padding: 40px;
 }
 
 /* text styles */
