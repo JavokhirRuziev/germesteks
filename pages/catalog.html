@@ -496,50 +496,72 @@
             <div class="container">
                 <h2 class="bold h2-bottom-margin">Catalog</h2>
             </div>
-            <div class="container md:!mb-[100px] !mb-[50px]">
-                <div id="carouselExample" class="carousel slide">
-                    <div
-                        class="carousel-inner max-w-[850px] max-h-[600px] m-auto"
-                    >
-                        <div class="carousel-item active">
-                            <img
-                                src="/assets/images/catalog-slider.png"
-                                class="d-block w-100 h-100"
-                                alt="catalog-slider"
-                            />
+            <div class="container">
+                <div class="book-section">
+                    <div class="container">
+                        <div class="right">
+                            <figure class="back" id="back-cover"></figure>
+                            <figure
+                                class="front"
+                                style="
+                                    background-image: url(/assets/images/catalog-slider.png);
+                                "
+                            ></figure>
                         </div>
-                        <div class="carousel-item">
-                            <img
-                                src="/assets/images/catalog-slider.png"
-                                class="d-block w-100 h-100"
-                                alt="catalog-slider"
-                            />
+                        <div class="right">
+                            <figure
+                                class="back"
+                                style="
+                                    background-image: url(/assets/images/catalog-slider.png);
+                                "
+                            ></figure>
+                            <figure
+                                class="front"
+                                style="
+                                    background-image: url(/assets/images/catalog-slider.png);
+                                "
+                            ></figure>
+                        </div>
+                        <div class="right">
+                            <figure
+                                class="back"
+                                style="
+                                    background-image: url(/assets/images/catalog-slider.png);
+                                "
+                            ></figure>
+                            <figure
+                                class="front"
+                                style="
+                                    background-image: url(/assets/images/catalog-slider.png);
+                                "
+                            ></figure>
+                        </div>
+
+                        <div class="right">
+                            <figure
+                                class="back"
+                                style="
+                                    background-image: url(/assets/images/catalog-slider.png);
+                                "
+                            ></figure>
+                            <figure class="front" id="cover">
+                                <div class="!mt-[80px]">
+                                    <h1 class="bold !text-[50px]">Catalog</h1>
+                                    <p class="bold !text-[30px] text-white">
+                                        Explore our collection of books and
+                                        resources.
+                                    </p>
+                                </div>
+                            </figure>
                         </div>
                     </div>
-                    <button
-                        class="carousel-control-prev"
-                        type="button"
-                        data-bs-target="#carouselExample"
-                        data-bs-slide="prev"
-                    >
-                        <img
-                            src="/assets/icons/arrow-left.svg"
-                            alt="arrow-right"
-                            class="md:w-[48px] w-[30px] md:h-[48px] h-[30px]"
-                        />
+                    <button onclick="turnLeft()" class="left-button">
+                        <img src="/assets/icons/arrow-left.svg" alt="left" />
                     </button>
-                    <button
-                        class="carousel-control-next"
-                        type="button"
-                        data-bs-target="#carouselExample"
-                        data-bs-slide="next"
-                    >
-                        <img
-                            src="/assets/icons/arrow-right.svg"
-                            alt="arrow-right"
-                            class="md:w-[48px] w-[30px] md:h-[48px] h-[30px]"
-                        />
+                    <button onclick="turnRight()" class="right-button">
+                        <img src="/assets/icons/arrow-right.svg" alt="right" />
                     </button>
+                    <br />
                 </div>
             </div>
         </section>
