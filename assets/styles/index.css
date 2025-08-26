@@ -34,18 +34,18 @@ section {
     padding: 35px 0px 0px 0px;
 }
 .banner-top-blur {
-    backdrop-filter: blur(10px);
     background: linear-gradient(
         180deg,
         var(--black-blur) 0%,
         var(--black-blur) 50%,
-        var(--white-blur) 100%
+        var(--black-blur) 75%,
+        transparent 100%
     );
     position: absolute;
     top: 0px;
     left: 0px;
     right: 0px;
-    height: 320px;
+    height: 300px;
     z-index: -1;
 }
 .banner {
