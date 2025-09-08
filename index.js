@@ -33,7 +33,7 @@ const goToProduct = (hasInner) => {
 var right = document.getElementsByClassName('right');
 var si = right.length;
 var z = 1;
-turnRight();
+// turnRight();
 function turnRight() {
     if (si >= 1) {
         si--;

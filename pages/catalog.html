@@ -492,79 +492,7 @@
             </div>
         </section>
 
-        <section>
-            <div class="container">
-                <h2 class="bold h2-bottom-margin">Catalog</h2>
-            </div>
-            <div class="container">
-                <div class="book-section">
-                    <div class="container">
-                        <div class="right">
-                            <figure class="back" id="back-cover"></figure>
-                            <figure
-                                class="front"
-                                style="
-                                    background-image: url(/assets/images/catalog-slider.png);
-                                "
-                            ></figure>
-                        </div>
-                        <div class="right">
-                            <figure
-                                class="back"
-                                style="
-                                    background-image: url(/assets/images/cones-1.png);
-                                "
-                            ></figure>
-                            <figure
-                                class="front"
-                                style="
-                                    background-image: url(/assets/images/cones-2.png);
-                                "
-                            ></figure>
-                        </div>
-                        <div class="right">
-                            <figure
-                                class="back"
-                                style="
-                                    background-image: url(/assets/images/cones-3.png);
-                                "
-                            ></figure>
-                            <figure
-                                class="front"
-                                style="
-                                    background-image: url(/assets/images/avatar-img-2.jpg);
-                                "
-                            ></figure>
-                        </div>
-
-                        <div class="right">
-                            <figure
-                                class="back"
-                                style="
-                                    background-image: url(/assets/images/avatar-img.jpg);
-                                "
-                            ></figure>
-                            <figure class="front" id="cover">
-                                <div class="!mt-[80px]">
-                                    <h1 class="bold !text-[50px]">Catalog</h1>
-                                    <p class="bold !text-[30px] text-white">
-                                        Explore our collection of books and
-                                        resources.
-                                    </p>
-                                </div>
-                            </figure>
-                        </div>
-                    </div>
-                    <button onclick="turnLeft()" class="left-button">
-                        <img src="/assets/icons/arrow-left.svg" alt="left" />
-                    </button>
-                    <button onclick="turnRight()" class="right-button">
-                        <img src="/assets/icons/arrow-right.svg" alt="right" />
-                    </button>
-                    <br />
-                </div>
-            </div>
-        </section>
+        <div class="container-book" id="container"></div>
 
         <footer>
             <div class="container !py-[40px]">
@@ -665,6 +593,39 @@
             integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
             crossorigin="anonymous"
         ></script>
+
+        <script src="/jq-3d-flip-book/js/jquery.min.js"></script>
+        <script src="/jq-3d-flip-book/js/html2canvas.min.js"></script>
+        <script src="/jq-3d-flip-book/js/three.min.js"></script>
+        <script src="/jq-3d-flip-book/js/pdf.min.js"></script>
+        <script src="/jq-3d-flip-book/js/3dflipbook.min.js"></script>
+        <script>
+            PDFJS.workerSrc = '/jq-3d-flip-book/js/pdf.worker.js';
+        </script>
+        <script type="text/javascript">
+            $('#container').FlipBook({
+                pdf: '/assets/catalog-2024.pdf',
+                propertiesCallback: function (props) {
+                    props.page.depth /= 2.5;
+                    props.cover.padding = 0.002;
+                    props.loading = true; // ensure lazy load works
+                    props.viewMode = '3d'; // 3D mode
+
+                    return props;
+                },
+                template: {
+                    html: '/jq-3d-flip-book/templates/default-book-view.html',
+                    styles: ['/jq-3d-flip-book/css/short-black-book-view.css'],
+                    links: [
+                        {
+                            rel: 'stylesheet',
+                            href: '/jq-3d-flip-book/css/font-awesome.min.css',
+                        },
+                    ],
+                    script: '/jq-3d-flip-book/js/default-book-view.js',
+                },
+            });
+        </script>
         <script src="/index.js"></script>
     </body>
 </html>

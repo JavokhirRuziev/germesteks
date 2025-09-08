@@ -1,0 +1,60 @@
+<div class="container">
+    <div class="book-section">
+        <div class="container">
+            <!-- First page: empty back, first image front -->
+
+            <div class="right">
+                <figure
+                    class="back"
+                    style="background-image: url({{ $item->images->last()->lg_img ?? '/assets/images/catalog-slider.png' }});"
+                ></figure>
+                <figure
+                    class="front"
+                    id="cover"
+                    style="background-image: url({{ $item->images[count($item->images) - 2]->lg_img ?? '/assets/images/catalog-slider.png' }});"
+                ></figure>
+            </div>
+
+            @php $images = $item->images ? $item->images->toArray() : []; if
+            (count($images) > 4) { array_shift($images); array_shift($images);
+            array_pop($images); array_pop($images); } else { $images = []; }
+            @endphp
+
+            <!-- Dynamic pages -->
+            @foreach(array_chunk($images, 2) as $pair)
+            <div class="right">
+                {{-- Back --}} @if(!empty($pair[0]))
+                <figure
+                    class="back"
+                    style="background-image: url({{ $pair[0]['lg_img'] }});"
+                ></figure>
+                @endif {{-- Front --}} @if(!empty($pair[1]))
+                <figure
+                    class="front"
+                    style="background-image: url({{ $pair[1]['lg_img'] }});"
+                ></figure>
+                @endif
+            </div>
+            @endforeach
+
+            <!-- Final cover page -->
+            <div class="right">
+                <figure
+                    class="back"
+                    style="background-image: url({{ $item->images[1]->lg_img ?? '/assets/images/catalog-slider.png' }});"
+                ></figure>
+                <figure
+                    class="front"
+                    style="background-image: url({{ $item->images[0]->lg_img ?? '/assets/images/catalog-slider.png' }});"
+                ></figure>
+            </div>
+        </div>
+        <button onclick="turnLeft()" class="left-button">
+            <img src="/web/assets/icons/arrow-left.svg" alt="left" />
+        </button>
+        <button onclick="turnRight()" class="right-button">
+            <img src="/web/assets/icons/arrow-right.svg" alt="right" />
+        </button>
+        <br />
+    </div>
+</div>

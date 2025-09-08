@@ -432,7 +432,6 @@ a {
 }
 .front#cover,
 .back#back-cover {
-    background-color: #0062ad;
     font-family: calibri;
     text-align: left;
     padding: 0 30px;
@@ -443,6 +442,16 @@ a {
 .front#cover p {
     color: rgba(0, 0, 0, 0.8);
     font-size: 14px;
+}
+
+.container-book {
+    height: 603px;
+    width: 100%;
+    max-width: 850px;
+    margin: 20px auto;
+}
+.fullscreen {
+    background-color: #333;
 }
 
 /* responsive */
